@@ -18,11 +18,13 @@ public class HelloController {
 
     @RequestMapping(value = "/", params = {"username", "password=123"})
     public String login() {
+        System.out.println("这不知是个测试");
         return "login";
     }
 
     @RequestMapping("/?*")
     public String success(HttpServletRequest request) {
+        System.out.println("这只是个测试11");
         return "login";
     }
 
