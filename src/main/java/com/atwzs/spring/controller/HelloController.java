@@ -18,7 +18,7 @@ public class HelloController {
 
     @RequestMapping(value = "/", params = {"username", "password=123"})
     public String login() {
-        System.out.println("2345t435678976");
+        System.out.println("米博士");
         return "login";
     }
 
